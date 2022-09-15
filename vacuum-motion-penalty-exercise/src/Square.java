@@ -8,7 +8,6 @@ public class Square {
 		}else {
 			this.state = "Dirty";
 		}
-
 	}
 
 	public boolean isClean() {

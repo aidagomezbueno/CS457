@@ -25,7 +25,6 @@ public class Main {
 					nactions+=2;
 				}
 			}
-
 			if(loc==asize) {
 				if(startp!=0) {
 					loc--;
