@@ -36,7 +36,7 @@ public class VacuumCleaner {
 		for(int i=0;i<nsquares;i++) {
 			this.env.add(i, new Square(getRandomBool()));
 		}
-		System.out.println(this.env);
+		//System.out.println(this.env);
 		Random r2 = new Random();
 		int loc = r2.nextInt(nsquares);
 		//System.out.println("Starting position: " + loc);

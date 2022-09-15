@@ -43,24 +43,51 @@ public class Main {
 			//pos = i;
 		}
 		
-		//System.out.println(loc);
+		System.out.println("Esto en que es la siguiente pos a considerar  " + loc);
 		System.out.println(asize);
+		System.out.println(startp);
 		//TODO NO ENTRA
 		
 		if(loc==asize) {
 			if(startp!=0) {
-				if(!vc.getEnv().get(loc-1).isClean()) {
+				loc--;
+				System.out.println("Pos en array" +loc);
+				//System.out.println("Entra");
+				//System.out.println(vc.getEnv().get(loc-1).isClean());
+				//System.out.println("es"+vc.getEnv().get(loc-1)+""+vc.getEnv().indexOf(vc.getEnv().get(loc-1)
+						//));
+				
+				for(int j=loc; loc>=0; j--) {
+					if(vc.getEnv().get(j).isClean()) {
+						loc--;
+					}else {
+						vc.getEnv().get(j).setClean();
+						loc--;
+					}
+				}
+				
+				/*
+				
+				if(vc.getEnv().get(loc).isClean()==false) {
+					vc.getEnv().get(loc).setClean();
+					loc--;
+				}/*
+				if(vc.getEnv().get(loc-1).isClean()) {
+					System.out.println("Entra");
 					vc.getEnv().get(loc-1).setClean();
+					
 					//System.out.println(loc);
 				}else {
-					for(int j = loc-1; j==0; j--) {
-						if(!vc.getEnv().get(j).isClean()) {
+					System.out.println("Entra");
+					for(int j = loc; j==0; j--) {
+						if(vc.getEnv().get(j).isClean()==false) {
+							System.out.println("Entra bluce");
 							vc.getEnv().get(j).setClean();
 							loc--;
 							System.out.println(loc);
 						}
 					}
-				}
+				}*/
 			}
 			
 			//System.out.println(vc.getEnv());
