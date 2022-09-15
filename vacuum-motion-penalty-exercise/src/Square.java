@@ -1,15 +1,14 @@
-
 public class Square {
-	
+
 	private String state;
-	
+
 	public Square(boolean clean) {
 		if(clean) {
 			this.state = "Clean";
 		}else {
 			this.state = "Dirty";
 		}
-		
+
 	}
 
 	public boolean isClean() {
@@ -18,7 +17,6 @@ public class Square {
 		}else {
 			return false;
 		}
-		//return clean;
 	}
 
 	public void setClean() {
@@ -29,7 +27,4 @@ public class Square {
 	public String toString() {
 		return this.state;
 	}
-	
-	
-
 }
