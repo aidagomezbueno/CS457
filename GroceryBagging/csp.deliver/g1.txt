@@ -1,0 +1,10 @@
+2
+10
+item0 6
+item8 2 
+item9 2 
+item14 1 
+item10 2 
+item5 3 
+item11 2 
+item12 2 
